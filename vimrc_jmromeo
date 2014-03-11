@@ -1,0 +1,37 @@
+colorscheme desert
+
+"spacing
+set tabstop=2             "makes all tabs equal 2 whitespace characters
+set shiftwidth=2          ">> and << by 2
+set expandtab				      "expands tabs into spaces
+filetype plugin indent on "auto chooses indent method depending on filetype  
+
+"searching
+set hlsearch        "causes searches in vim to highlight matching results 
+set ignorecase      "ignores case in search results (ie, "This" and "this" 
+                    "will both show up in a search of "this")
+set smartcase       "case-sensitive if search contains an uppercase letter
+set incsearch       "when searching, matches the pattern as it's being typed
+"causes the highlighting of search results to be removed upon hitting enter
+nnoremap <CR> :noh<CR><CR> 
+
+"editor options
+set number          "shows line numbers 
+set ruler           "shows current line position all the time
+set nocompatible    "uses vim options instead of vi options
+set showmatch       "this highlights matching bracers
+syntax enable       "uses syntax highlighting
+
+"folding options(use z-R to unfold everything when you open a file)
+set foldmethod=syntax
+
+"special options for makefiles (because makefiles require tabs)
+autocmd FileType make setlocal noexpandtab
+
+"syntax highlighting for system verilog(you  must download system
+"verilog syntax files and modify the path to where you download
+"them for this to work
+"so ~/.vim/syntax/verilog_systemverilog.vim
+"so ~/.vim/indent/verilog_systemverilog.vim
+"so ~/.vim/ftdetect/verilog_systemverilog.vim
+

@@ -1,4 +1,5 @@
 vimrc
 =====
 
-Vimrc Configuration File.  This will help me create a consistant vim configuration wherever I travel.
+Vimrc Configuration Files. This is a place where people can share their 
+favorite vim configuration files. 
