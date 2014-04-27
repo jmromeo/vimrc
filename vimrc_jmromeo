@@ -21,6 +21,8 @@ set ruler           "shows current line position all the time
 set nocompatible    "uses vim options instead of vi options
 set showmatch       "this highlights matching bracers
 syntax enable       "uses syntax highlighting
+set wildmenu        "creating dropdown list for tab completion
+set wildmode=longest:full,full
 
 "folding options(use z-R to unfold everything when you open a file)
 set foldmethod=syntax
