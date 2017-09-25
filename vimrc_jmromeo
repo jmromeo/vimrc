@@ -18,12 +18,12 @@ set incsearch       "when searching, matches the pattern as it's being typed
 nnoremap <CR> :noh<CR><CR>
 
 "editor options
-set number          "shows line numbers
-set ruler           "shows current line position all the time
-set nocompatible    "uses vim options instead of vi options
-set showmatch       "this highlights matching bracers
-syntax enable       "uses syntax highlighting
-set wildmenu        "creating dropdown list for tab completion
+set number relativenumber   "shows current line number + relative line numbers from that line
+set ruler                   "shows current line position all the time
+set nocompatible            "uses vim options instead of vi options
+set showmatch               "this highlights matching bracers
+syntax enable               "uses syntax highlighting
+set wildmenu                "creating dropdown list for tab completion
 set wildmode=longest:full,full
 set nowrap
 
